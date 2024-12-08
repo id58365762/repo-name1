@@ -25,6 +25,11 @@
 		<!--<![endif]-->
 		<script src="booking/js/booking.js"></script>
 		<script>
+			 setTimeout(function(){ 
+  				 $('.load').css('display', 'none');
+			}, 2000);
+
+			
 			$(document).ready(function(){
 				jQuery('#camera_wrap').camera({
 					loader: false,
@@ -51,7 +56,10 @@
 			<link rel="stylesheet" media="screen" href="css/ie.css">
 		<![endif]-->
 	</head>
-	<body class="page1" id="top">
+	<body class="page1" id="top"> 
+			<div class="load">
+    			<hr/><hr/><hr/><hr/>
+ 
 		<div class="main">
 <!--==============================header=================================-->
 			<header>
@@ -235,6 +243,7 @@
 				</div>
 				<div class="clear"></div>
 			</div>
+				 </div>
 		</footer>
 		<script>
 			$(function (){
